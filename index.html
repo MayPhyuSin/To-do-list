@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do list</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">   
+  <link rel="stylesheet" href="css/all.min.css">
+         
+</head>
+<body style="background-image: linear-gradient(to  right, rgb(88, 0, 0), rgb(0, 47, 77))">
+
+ 
+    <div class="container rounded my-4 p-0 bg-white" style="max-width: 600px;">
+      <nav class="navbar bg-dark navbar-dark rounded-top w-100">
+        <div class="container">
+          <a href="#" class="navbar-brand">To-do List<span class="badge bg-danger ms-2">0</span></a>
+        
+        </div>
+      </nav>
+
+      <div class="container my-5">
+        <div class="input-group mb-3">
+          <input type="text"  id="input-box" class="form-control" placeholder="Write your tasks here!">
+          <button onclick="addTask()" class="btn btn-dark">Add</button>
+        </div>
+
+        <div class="border border-light rounded mb-3">
+          <ul id="todo-container" class="list-group">
+            <span class="text-secondary">Tasks</span>
+            <!-- <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <label class="form-check-label">First task</label>
+              <a href="#" class="fa-solid fa-trash text-danger float-end mt-1"></a>
+            </li>
+   -->   
+          </ul>
+        </div>
+
+        <div class="border border-light rounded pb-4">
+          <ul id="done" class="list-group">
+            <nav class="navbar">
+              <span class="text-secondary">Completed</span>
+              <button id="clear" class="btn btn-outline-secondary btn-sm float-end">Clear</button>
+            </nav>
+            <!-- <li class="list-group-item  opacity-50">Done alei</li> -->
+          </ul>
+        </div>
+
+      </div> 
+      
+      
+    </div>
+  
+    
+  
+
+<script src="script.js"></script>
+</body>
+</html>
